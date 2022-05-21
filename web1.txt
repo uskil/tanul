@@ -1,0 +1,109 @@
+Visual Studio Code:
+a Microsoft által fejlesztett IDE (Integrated Development Environment). Kiváló támogatást nyújt a Webes fejlesztésekhez, ingyenes és több ezer kiegészítő érhető el hozzá.
+Git:
+a Git verziókezelő rendszert Linus Torvalds, a Linux atyja fejlesztette ki. A cél az volt, hogy akár több ezren is zökkenőmentesen tudjanak együtt dolgozni ugyanazon a programon. Mára már ez lett a közös munka egyik alapköve.
+
+Google Chrome:
+Innen tudod letölteni: https://www.google.com/chrome/
+Jelenleg a vezető böngésző. Asztali és mobil platformokon is a legtöbben ezt használják, ezért érdemes ezzel tesztelni a készülő weboldaladat, vagy webes alkalmazásodat.
+Visual Studio Code:
+Innen tudod letölteni: https://code.visualstudio.com/
+Jelenleg az egyik legjobb szerkesztő program, ha webes projekten dolgozol.
+
+Visual Studio Code Extensions:
+Ha kiegészítőket keresel hozzá, itt találsz: https://marketplace.visualstudio.com/VSCode
+Ezekkel a kiegészítőkkel megtaníthatod a VSCode-ot új nyelvekre és technológiákra. Ha már telepítve van a program, akkor azon belül is eléred ezt a listát az "Extensions" gombra kattintva a bal oldalon.
+Live Server Extension:
+Ezzel a kiegészítővel mentés után azonnal látod az eredményt a böngészőben.
+Az "Extensions" panelen írd be: "live server".
+A hivatalos letöltő oldal: tovább az oldalra
+Gyorsbillentyűk:
+Mellékeltem egy dokumentumot, ami tartalmazza a munka gyorsítására való billentyűkombinációkat. Ezek arra jók, hogy nem kell egérrel a menüből kikeresned a parancsokat, hanem a megfelelő billentyűk lenyomására azok azonnal végrehajtódnak. Tipikusan ilyenek a menük megnyitása, panelek megnyitása vagy elrejtése, változók átnevezése, kód formázása és hasonlók.
+
+Node.js:
+Innen tudod letölteni: https://nodejs.org/en/
+Arra való, hogy programokat tudj futtatni Windowson vagy Linuxon, amiket JavaScript nyelven írtál. Erre régebben nem volt lehetőség, az ilyen kódokat csak a böngészőben lehetett futtatni.
+Ellenőrzés:
+Nyiss egy terminál ablakot.
+Program verziójának ellenőrzése: ﻿\tt node\, \text{-}vnode-v﻿
+Csomagtelepítő ellenőrzése: ﻿\tt npm\, \text{-}vnpm-v
+
+Visual Studio Code user interface:
+A felhasználói felület elemeinek részletes leírását itt találod (angol nyelven):
+https://code.visualstudio.com/docs/getstarted/userinterface
+A gyorsbillentyűk listáját az oldal alján megtalálod.
+
+A videóban használt billentyűkombinációk:
+Ctrl + D: a szöveg következő előfordulásának a kijelöléshez adása
+Ctrl + F2: a szöveg összes előfordulásának kijelölése
+Alt + up/down: az aktív sor mozgatása felfelé vagy lefelé
+Alt + Shift + up/down: az aktív sor megduplázása felfelé vagy lefelé
+
+Git:
+Letöltő oldal (Windows-hoz): https://git-scm.com/download/win
+A gitet Linus Torvalds fejlesztette, hogy tudja követni a Linux kernel fájljait. A következő célokat tűzte ki:
+Sebesség
+Egyszerűség
+Elágazások (branchek) támogatása
+Nagy projektek gyors és hatékony támogatása (pl. a Linux kernel)
+A teljes elosztottság
+
+Play
+GitHub:
+A GitHub címe: https://github.com/
+A GitHub egy ingyenes Git szerver.
+Ide tudják az együtt dolgozó kollégák feltölteni a módosításaikat és a GitHub-on keresztül szinkronizálni a munkájukat.
+Példák és dokumentáció:
+https://guides.github.com/activities/hello-world/
+https://git-scm.com/book/en/v2/GitHub-Account-Setup-and-Configuration
+
+A klónozás lépései:
+Mi az a klónozás?
+Az a művelet, amikor egy meglévő Git repository tartalmát letöltöm a gépemre és beállítom, hogy a Git figyelje a mappát.
+A klónozható URL kimásolása a GitHub oldaláról.
+Parancssor nyitása a Sajátgépen.
+Betallózás a kívánt könyvtárba.
+Klón parancs: ﻿\texttt{git clone <repo\_url>}git clone <repo_url>﻿
+Létrejön az új mappa, a neve megegyezik a repo nevével.
+
+Forkolás:
+A forkolás nagyon hasonló a klónozáshoz, csak itt nem én hozom létre a kezdő tartalmat. Valaki másnak kiválasztom a repo-ját, majd egyszerűen rányomok a Fork gombra.
+Így létrejön egy új repo a saját nevem alatt, de az eredeti repo tartalmával. Innen már én fejlesztem tovább az alkalmazásomat, a módosításaim nem lesznek hatással az eredeti, forkolt repo-ra.
+
+Play
+Git fájlok állapotai:
+Egy fájl négy állapotban lehet a gépünkön:
+Untracked: a Git nem törődik a fájllal. Ez újonnan létrehozott fájloknál jellemző.
+Unmodified: a Git követi a fájlt, és mi nem módosítottuk azt. Ez az újonnan letöltött fájlok állapota.
+Modified: a Git követi a fájlt, és mi módosítottuk.
+Staged: a Git követi a fájlt, mi módosítottuk, és a módosítás be fog kerülni az adatbázisba.
+Státuszváltások:
+
+A Git munkafolyamat tehát így néz ki új fájlok esetében:
+Létrehozunk egy új fájlt
+﻿\texttt{git add}git add﻿ parancssal hozzáadjuk a staging area-hoz
+﻿\texttt{git commit}git commit﻿ paranccsal a staging area tartalmát hozzáadjuk az adatbázishoz
+Meglévőek esetében pedig így:
+Módosítjuk a fájlt
+﻿\texttt{git add}git add﻿ parancssal hozzáadjuk a staging area-hoz
+﻿\texttt{git commit}git commit﻿ paranccsal a staging area tartalmát hozzáadjuk az adatbázishoz
+Dokumentáció:
+https://git-scm.com/book/en/v2/Git-Basics-Recording-Changes-to-the-Repository
+Lokálisan: ﻿\tt git\,\,status\,\,\text{-}\text{-}helpgitstatus--help﻿
+Lokálisan: ﻿\tt git\,\,add\,\,\text{-}\text{-}helpgitadd--help﻿
+Lokálisan: ﻿\tt git\,\,commit\,\,\text{-}\text{-}helpgitcommit--help
+
+Play
+Ismerjük a commit parancsot, amivel a változtatásainkat tudjuk véglegesíteni a helyi gépünkön. Ideje ezeket feltölteni egy közös Git szerverre.
+A közös munka alapját a következő három parancs jelenti:
+Fetch - Mi történt mostanában?
+A ﻿\texttt{"git fetch"}"git fetch"﻿ parancs megnézi, milyen változások történtek a szerveren. Ezeket a változásokat le is tölti, de nem nyúl hozzá az aktuális munkánkhoz, a working directory nem változik a hatására. Ezáltal nyugodtan kiadhatjuk bármikor a parancsot, nem lesz kellemetlen mellékhatása.
+Pull - Jöhet minden!
+A ﻿\texttt{"git pull"}"git pull"﻿ parancs letölti a változásokat a szerverről, és integrálja a saját munkánkba. Fontos különbség a fetch parancshoz képest, hogy a pull nem egy biztonságos parancs, változni fog a mappánk tartalma, ha kiadjuk. Mindig commitoljunk, mielőtt kiadnánk a pull parancsot!
+Push - Megy a munkám!
+A ﻿\texttt{"git push"}"git push"﻿ parancs feltölti a commitjainkat a szerverre. Jegyezzük meg, csak azok a változások mennek fel, amiket commitoltunk! Mielőtt pusholni próbálnánk, kérjük el a szervertől a változásokat a pull paranccsal!
+Dokumentáció:
+https://git-scm.com/book/en/v2/Git-Basics-Working-with-Remotes
+Lokálisan: ﻿\tt git\,\,fetch\,\,\text{-}\text{-}helpgitfetch--help﻿
+Lokálisan: ﻿\tt git\,\,pull \,\,\text{-}\text{-}helpgitpull--help﻿
+Lokálisan: ﻿\tt git\,\,push\,\,\text{-}\text{-}helpgitpush--help
